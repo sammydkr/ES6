@@ -1,0 +1,12 @@
+Consider the following ES5 code:
+
+const user = { name: 'John Doe', age: 34 };
+
+const name = user.name;
+const age = user.age;
+
+Here's an equivalent assignment statement using the ES6 destructuring syntax:
+
+const { name, age } = user;
+
+const {today, tomorrow} = HIGH_TEMPERATURES;
