@@ -1,0 +1,9 @@
+myMathModule.add(2,3);
+myMathModule.subtract(5,3);
+
+import * as stringFuctions from "./string_functions.js";
+
+
+stringFunctions.uppercaseString("hello");
+stringFunctions.lowercaseString("WORLD!");
+
