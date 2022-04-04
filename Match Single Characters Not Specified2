@@ -1,0 +1,9 @@
+Be sure to check whether your number range is correct 
+– the challenge asks us to negate all numbers from 0 to 9. 
+This can be done using the negate caret placed immediately after the first opening bracket of your regexp.
+
+let numbersRegExp = /[^0-9]/gi;
+
+let quoteSample = "3 blind mice.";
+let myRegex = /[^aeiou^0-9]/gi; // 
+let result = quoteSample.match(myRegex); // 
