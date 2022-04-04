@@ -1,0 +1,9 @@
+ regexp in slashes?
+
+let regexp = /t.[a-z]*t/;
+
+you using the ‘+’ flag in your regexp?
+
+let regexp = /E+/; // 
+
+let reCriminals = /C+/; 
