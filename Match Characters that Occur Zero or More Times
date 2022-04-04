@@ -1,0 +1,28 @@
+Any letter in a regex expression that is followed by a * does not have to occur 
+in the string tested whereas any letter in a regex expression followed by a + must occur in a string at least once, as shown below,
+
+let phrase = "ba humbug";
+
+let regexPlus = /bah+/;
+let regexStar = /bah*/;
+
+regexPlus.test(phrase); // returns false
+regexStar.test(phrase); // returns true
+Both allow for any number of occurrences of the letter ın row for example 
+
+let phrase = "wooooow look at that!";
+
+let regexPlus = /wo+w/;
+let regexStar = /wo*w/;
+
+regexPlus.test(phrase); // returns true
+regexStar.test(phrase); // returns true
+For this challenge, chewieQuote has been initialized as the string Aaaaaaaaaaaaaaaarrrgh! 
+behind the scenes. Create a regex chewieRegex that uses the * character to match an uppercase 
+A character immediately followed by zero or more lowercase a characters in chewieQuote. 
+Your regex does not need flags or character classes, and it should not match any of the other quotes.
+
+
+let chewieQuote = "Aaaaaaaaaaaaaaaarrrgh!";
+let chewieRegex = /Aa*/; // Change this line
+let result = chewieQuote.match(chewieRegex);
