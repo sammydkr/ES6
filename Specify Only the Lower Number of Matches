@@ -1,0 +1,16 @@
+For example, to match only the string hah with the letter a appearing at least 3 times, your regex would be /ha{3,}h/.
+
+
+let A4 = "haaaah";
+let A2 = "haah";
+let A100 = "h" + "a".repeat(100) + "h";
+let multipleA = /ha{3,}h/;
+multipleA.test(A4);
+multipleA.test(A2);
+multipleA.test(A100);
+
+Change the regex haRegex to match the word Hazzah only when it has four or more letter z's.
+
+let haStr = "Hazzzzah";
+let haRegex = /haz{4,}h/; // Change this line
+let result = haRegex.test(haStr);
